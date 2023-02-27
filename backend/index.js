@@ -3,7 +3,7 @@ var mongo = require('mongodb');
 const express = require("express");
 var MongoClient = mongo.MongoClient;  
 const url = "mongodb+srv://user:sanjeet123@cluster0.hpg7xhg.mongodb.net/articles?retryWrites=true&w=majority";
-const port = 3000;
+const port = process.env.PORT || 3000;
 const cors = require('cors');
 mongoose.set('strictQuery', true);
 const client = new MongoClient(url, {
