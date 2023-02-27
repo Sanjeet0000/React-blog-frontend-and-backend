@@ -171,6 +171,7 @@ img{
   width: 40%;
   min-width: 200px;
   margin: 10px;
+  padding-right: 10px;
 }
 
 .card_details{

@@ -8,7 +8,7 @@ const BlogPage = ({category}) => {
   
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get('http://localhost:3000/getData');
+      const response = await axios.get('https://react-blog-backend-q97d.onrender.com/getData');
       setData(response.data);
     }
     fetchData();
